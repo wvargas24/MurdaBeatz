@@ -2,21 +2,21 @@ $(document).ready(function(){
     // Sticky header
     const header = document.getElementById("main-header");
 
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", () => {
         if (window.pageYOffset > 100) {
-            header.classList.add("header-scrolled");
-            header.querySelector(".container-xxl").classList.remove("align-items-start");
-            header.querySelector(".container-xxl").classList.add("align-items-center");
-            header.querySelector(".logo-img").classList.add("small");
-            header.querySelector("#navbarNav").style.padding = "0";
+          header.classList.add("header-scrolled");
+          header.querySelector(".container-xxl").classList.remove("align-items-start");
+          header.querySelector(".container-xxl").classList.add("align-items-center");
+          header.querySelector(".logo-img").classList.add("small");
+          header.querySelector("#navbarNav").style.padding = "0";
         } else {
-            header.classList.remove("header-scrolled");
-            header.querySelector(".container-xxl").classList.remove("align-items-center");
-            header.querySelector(".container-xxl").classList.add("align-items-start");
-            header.querySelector(".logo-img").classList.remove("small");
-            header.querySelector("#navbarNav").style.padding = "20px";
+          header.classList.remove("header-scrolled");
+          header.querySelector(".container-xxl").classList.remove("align-items-center");
+          header.querySelector(".container-xxl").classList.add("align-items-start");
+          header.querySelector(".logo-img").classList.remove("small");
+          header.querySelector("#navbarNav").style.padding = "20px";
         }
-    });
+    });      
 
     // Smoot scroll to section when clicking on the menu links
     const scrollLinks = document.querySelectorAll('.scroll-link');
@@ -107,25 +107,19 @@ $(document).ready(function(){
         'wrapAround': true
     });
 
-    // Captura el formulario y el mensaje de éxito
+    // Capture the form and the success message
     const form = document.getElementById('newsletterForm');
     const successMessage = document.getElementById('successMessage');
-
-    // Agrega un evento de escucha para el envío del formulario
-    form.addEventListener('submit', function(event) {
-        // Verifica si el formulario es válido
+    form.addEventListener('submit', (event) => {
         if (!form.checkValidity()) {
-            event.preventDefault();
-            event.stopPropagation();
+          event.preventDefault();
+          event.stopPropagation();
         } else {
-            // Oculta el formulario y muestra el mensaje de éxito
-            event.preventDefault();
-            form.style.display = 'none';
-            successMessage.classList.remove('d-none');
+          event.preventDefault();
+          form.style.display = 'none';
+          successMessage.classList.remove('d-none');
         }
-
-        // Marca los campos como validados
         form.classList.add('was-validated');
-    });
+    });      
 
 });
