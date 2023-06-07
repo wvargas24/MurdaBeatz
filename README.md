@@ -1,7 +1,5 @@
 # MurdaBeatz
 
-![MurdaBeatz Preview](https://wvargas24.github.io/MurdaBeatz/images/murda-beatz-site-1.1.webp)
-
 This project is an interactive website called MurdaBeatz. It is a static web page developed using HTML, CSS, and JavaScript. It utilizes popular libraries such as Bootstrap, Slick Slider, and Lightbox to enhance the appearance and functionality of the site.
 
 The project is fully responsive, meaning it adapts and looks great on various screen sizes, from mobile devices to desktop computers. CSS Grid and Flexbox have been used to achieve a flexible and fluid layout.
@@ -32,4 +30,4 @@ The following technologies were used to develop this project:
 1. Clone this repository to your local machine.
 2. Open the `index.html` file in your web browser.
 
-
+![MurdaBeatz Preview](https://wvargas24.github.io/MurdaBeatz/images/murda-beatz-site-1.1.webp)
