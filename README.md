@@ -19,6 +19,7 @@ You can visit the [live website](https://wvargas24.github.io/MurdaBeatz/) to see
 The following technologies were used to develop this project:
 
 - HTML
+- SCSS
 - CSS
 - JavaScript
 - Bootstrap
